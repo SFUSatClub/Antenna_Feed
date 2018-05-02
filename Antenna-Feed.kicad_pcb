@@ -3,7 +3,7 @@
   (general
     (links 17)
     (no_connects 17)
-    (area 89.924999 42.464999 165.005001 140.075001)
+    (area 80.650001 41.755 166.39 144.700001)
     (thickness 1.6)
     (drawings 22)
     (tracks 0)
@@ -143,7 +143,7 @@
     (add_net "Net-(J1-Pad1)")
   )
 
-  (module SFUSat:SMA-Vert-TH (layer B.Cu) (tedit 59222DDC) (tstamp 59433206)
+  (module SFUSat:SMA-Vert-TH locked (layer B.Cu) (tedit 59222DDC) (tstamp 59433206)
     (at 124.825 91.29)
     (path /59433123)
     (fp_text reference J3 (at 0 -5.6) (layer B.SilkS)
@@ -199,34 +199,8 @@
     )
   )
 
-  (module SFUSat:via-0.97mm (layer F.Cu) (tedit 5ABFF726) (tstamp 5AA5E366)
-    (at 125 109)
-    (path /5AA46726)
-    (fp_text reference J1 (at 0.0635 2.032) (layer F.SilkS) hide
-      (effects (font (size 1 1) (thickness 0.15)))
-    )
-    (fp_text value Conn_01x01 (at 0.254 -2.8575) (layer F.Fab) hide
-      (effects (font (size 1 1) (thickness 0.15)))
-    )
-    (pad 1 thru_hole circle (at 0 0) (size 1.6 1.6) (drill 1) (layers *.Cu)
-      (net 1 "Net-(J1-Pad1)") (zone_connect 2))
-  )
-
-  (module SFUSat:via-0.97mm (layer F.Cu) (tedit 5ABFF721) (tstamp 5AA5E36E)
-    (at 125 73)
-    (path /5AA4669F)
-    (fp_text reference J4 (at 0.0635 2.032) (layer F.SilkS) hide
-      (effects (font (size 1 1) (thickness 0.15)))
-    )
-    (fp_text value Conn_01x01 (at 0.254 -2.8575) (layer F.Fab) hide
-      (effects (font (size 1 1) (thickness 0.15)))
-    )
-    (pad 1 thru_hole circle (at 0 0) (size 1.6 1.6) (drill 1) (layers *.Cu)
-      (net 2 "Net-(J3-Pad2)") (zone_connect 2))
-  )
-
-  (module SFUSat:SS-3GLPD-R (layer F.Cu) (tedit 5AE4C63E) (tstamp 5AA5E395)
-    (at 140.02 109.16 125.5)
+  (module SFUSat:SS-3GLPD-R locked (layer F.Cu) (tedit 5AE4C63E) (tstamp 5AA5E395)
+    (at 139.748123 109.810139 125.5)
     (path /5AA5D587)
     (fp_text reference SW1 (at 11 -6 215.5) (layer F.SilkS)
       (effects (font (size 1 1) (thickness 0.15)))
@@ -259,8 +233,8 @@
     )
   )
 
-  (module SFUSat:SS-3GLPD-R (layer F.Cu) (tedit 5AA48577) (tstamp 5AA5E3A8)
-    (at 110.218904 72.77 305)
+  (module SFUSat:SS-3GLPD-R locked (layer F.Cu) (tedit 5AA48577) (tstamp 5AA5E3A8)
+    (at 109.748904 72.685278 305)
     (path /5AAB74FD)
     (fp_text reference SW2 (at 11 -6 395) (layer F.SilkS)
       (effects (font (size 1 1) (thickness 0.15)))
@@ -332,8 +306,8 @@
       (net 8 "Net-(J10-Pad1)"))
   )
 
-  (module SFUSat:PC104PTH (layer F.Cu) (tedit 59220F68) (tstamp 5AAB2566)
-    (at 94 136)
+  (module SFUSat:PC104PTH locked (layer F.Cu) (tedit 59220F68) (tstamp 5AAB2566)
+    (at 92.46 137.5)
     (path /5AAB7B97)
     (fp_text reference J11 (at 0 5.08) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)))
@@ -358,8 +332,8 @@
       (net 10 "Net-(J12-Pad1)"))
   )
 
-  (module SFUSat:PC104PTH (layer F.Cu) (tedit 59220F68) (tstamp 5AAB2570)
-    (at 155.65 46.54)
+  (module SFUSat:PC104PTH locked (layer F.Cu) (tedit 59220F68) (tstamp 5AAB2570)
+    (at 157.2 45.04)
     (path /5AAB7D00)
     (fp_text reference J13 (at 0 5.08) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)))
@@ -371,8 +345,8 @@
       (net 11 "Net-(J13-Pad1)"))
   )
 
-  (module SFUSat:PTH-2.0mm (layer F.Cu) (tedit 5A83AAA5) (tstamp 5AAB2599)
-    (at 109 96)
+  (module SFUSat:PTH-2.0mm locked (layer F.Cu) (tedit 5A83AAA5) (tstamp 5AAB2599)
+    (at 109 95.25)
     (path /5AA46B9D)
     (fp_text reference J5 (at 0 2.1) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)))
@@ -389,8 +363,8 @@
     )
   )
 
-  (module SFUSat:PTH-2.0mm (layer F.Cu) (tedit 5A83AAA5) (tstamp 5AAB259D)
-    (at 109 89)
+  (module SFUSat:PTH-2.0mm locked (layer F.Cu) (tedit 5A83AAA5) (tstamp 5AAB259D)
+    (at 109 86.75)
     (path /5AA5E577)
     (fp_text reference J6 (at 0 2.1) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)))
@@ -407,8 +381,8 @@
     )
   )
 
-  (module SFUSat:PTH-2.0mm (layer F.Cu) (tedit 5A83AAA5) (tstamp 5AAB25A1)
-    (at 140 97)
+  (module SFUSat:PTH-2.0mm locked (layer F.Cu) (tedit 5A83AAA5) (tstamp 5AAB25A1)
+    (at 140 96.25)
     (path /5AAB74F7)
     (fp_text reference J7 (at 0 2.1) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)))
@@ -425,8 +399,8 @@
     )
   )
 
-  (module SFUSat:PTH-2.0mm (layer F.Cu) (tedit 5A83AAA5) (tstamp 5AAB25A5)
-    (at 140 89)
+  (module SFUSat:PTH-2.0mm locked (layer F.Cu) (tedit 5A83AAA5) (tstamp 5AAB25A5)
+    (at 140 86.75)
     (path /5AAB7503)
     (fp_text reference J8 (at 0 2.1) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)))
@@ -518,6 +492,32 @@
     (pad 25A thru_hole circle (at 2.54 0 90) (size 1.6 1.6) (drill 1) (layers *.Cu *.Mask))
     (pad 27A thru_hole circle (at 7.62 0 90) (size 1.6 1.6) (drill 1) (layers *.Cu *.Mask))
     (pad 26A thru_hole circle (at 5.08 0 90) (size 1.6 1.6) (drill 1) (layers *.Cu *.Mask))
+  )
+
+  (module SFUSat:via-0.97mm locked (layer F.Cu) (tedit 5AE8FEB8) (tstamp 5AA5E36E)
+    (at 153 56.75)
+    (path /5AA4669F)
+    (fp_text reference J4 (at 0.0635 2.032) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value Conn_01x01 (at 0.254 -2.8575) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad 1 thru_hole circle (at 0 0) (size 2 2) (drill 1) (layers *.Cu *.Mask)
+      (net 2 "Net-(J3-Pad2)") (zone_connect 2))
+  )
+
+  (module SFUSat:via-0.97mm locked (layer F.Cu) (tedit 5AE8FEB8) (tstamp 5AA5E366)
+    (at 96.25 125.75)
+    (path /5AA46726)
+    (fp_text reference J1 (at 0.0635 2.032) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value Conn_01x01 (at 0.254 -2.8575) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad 1 thru_hole circle (at 0 0) (size 2 2) (drill 1) (layers *.Cu *.Mask)
+      (net 1 "Net-(J1-Pad1)") (zone_connect 2))
   )
 
   (gr_circle (center 116.25 74.38) (end 116.33 74.38) (layer F.SilkS) (width 0.2))
