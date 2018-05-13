@@ -1,5 +1,4 @@
 EESchema Schematic File Version 2
-LIBS:Antenna-Feed-rescue
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -39,7 +38,7 @@ EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 1
+Sheet 1 2
 Title ""
 Date ""
 Rev ""
@@ -58,60 +57,6 @@ F 1 "SMA" H 8475 2800 60  0000 C CNN
 F 2 "SFUSat:SMA-Vert-TH" H 8675 2700 60  0001 C CNN
 F 3 "" H 8675 2700 60  0000 C CNN
 	1    8475 2650
-	1    0    0    -1  
-$EndComp
-$Comp
-L B3B-XH-A(LF)(SN) J2
-U 1 1 5AA386EC
-P 2525 4400
-F 0 "J2" H 2525 4575 50  0000 C BNN
-F 1 "B3B-XH-A(LF)(SN)" V 2625 4400 50  0000 C TNN
-F 2 "SFUSat:B3B-XH-A" H 2525 4400 50  0001 C CNN
-F 3 "" H 2525 4400 50  0001 C CNN
-F 4 "-" H 2525 4400 50  0001 C CNN "Applications"
-F 5 "Connectors, Interconnects - Rectangular Connectors - Headers, Male Pins" H 2525 4400 50  0001 C CNN "Categories"
-F 6 "Header" H 2525 4400 50  0001 C CNN "Connector Type"
-F 7 "Tin" H 2525 4400 50  0001 C CNN "Contact Finish - Mating"
-F 8 "Tin" H 2525 4400 50  0001 C CNN "Contact Finish - Post"
-F 9 "-" H 2525 4400 50  0001 C CNN "Contact Finish Thickness - Mating"
-F 10 "-" H 2525 4400 50  0001 C CNN "Contact Finish Thickness - Post"
-F 11 "-" H 2525 4400 50  0001 C CNN "Contact Length - Mating"
-F 12 "0.134\" (3.40mm)" H 2525 4400 50  0001 C CNN "Contact Length - Post"
-F 13 "Brass" H 2525 4400 50  0001 C CNN "Contact Material"
-F 14 "Square" H 2525 4400 50  0001 C CNN "Contact Shape"
-F 15 "Male Pin" H 2525 4400 50  0001 C CNN "Contact Type"
-F 16 "3A" H 2525 4400 50  0001 C CNN "Current Rating"
-F 17 "Detent Lock" H 2525 4400 50  0001 C CNN "Fastening Type"
-F 18 "-" H 2525 4400 50  0001 C CNN "Features"
-F 19 "-" H 2525 4400 50  0001 C CNN "Ingress Protection"
-F 20 "Natural" H 2525 4400 50  0001 C CNN "Insulation Color"
-F 21 "0.276\" (7.00mm)" H 2525 4400 50  0001 C CNN "Insulation Height"
-F 22 "Polyamide (PA66), Nylon 6/6" H 2525 4400 50  0001 C CNN "Insulation Material"
-F 23 "Lead free / RoHS Compliant" H 2525 4400 50  0001 C CNN "Lead Free Status / RoHS Status"
-F 24 "JST Sales America Inc." H 2525 4400 50  0001 C CNN "Manufacturer 1"
-F 25 "B3B-XH-A(LF)(SN)" H 2525 4400 50  0001 C CNN "Manufacturer Part Number 1"
-F 26 "14 Weeks" H 2525 4400 50  0001 C CNN "Manufacturer Standard Lead Time 1"
-F 27 "9.8mm" H 2525 4400 50  0001 C CNN "Mated Stacking Heights"
-F 28 "UL94 V-0" H 2525 4400 50  0001 C CNN "Material Flammability Rating"
-F 29 "Through Hole" H 2525 4400 50  0001 C CNN "Mounting Type"
-F 30 "3" H 2525 4400 50  0001 C CNN "Number of Positions"
-F 31 "All" H 2525 4400 50  0001 C CNN "Number of Positions Loaded"
-F 32 "1" H 2525 4400 50  0001 C CNN "Number of Rows"
-F 33 "-25°C ~ 85°C" H 2525 4400 50  0001 C CNN "Operating Temperature"
-F 34 "-" H 2525 4400 50  0001 C CNN "Overall Contact Length"
-F 35 "Active" H 2525 4400 50  0001 C CNN "Part Status"
-F 36 "0.098\" (2.50mm)" H 2525 4400 50  0001 C CNN "Pitch - Mating"
-F 37 "-" H 2525 4400 50  0001 C CNN "Row Spacing - Mating"
-F 38 "XH" H 2525 4400 50  0001 C CNN "Series"
-F 39 "Shrouded - 4 Wall" H 2525 4400 50  0001 C CNN "Shrouding"
-F 40 "Board to Cable/Wire" H 2525 4400 50  0001 C CNN "Style"
-F 41 "Digi-Key" H 2525 4400 50  0001 C CNN "Supplier 1"
-F 42 "455-2248-ND" H 2525 4400 50  0001 C CNN "Supplier Part Number 1"
-F 43 "Press-Fit, Solder" H 2525 4400 50  0001 C CNN "Termination"
-F 44 "250V" H 2525 4400 50  0001 C CNN "Voltage Rating"
-F 45 "XHP-3" H 2525 4400 50  0001 C CNN "Mating Part Number"
-F 46 "455-2219-ND" H 2525 4400 50  0001 C CNN "Mating Part Digikey"
-	1    2525 4400
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -150,12 +95,12 @@ $EndComp
 $Comp
 L LIMIT_SWITCH SW1
 U 1 1 5AA5D587
-P 1825 2950
-F 0 "SW1" H 1825 2800 60  0000 C CNN
-F 1 "LIMIT_SWITCH" H 1825 3200 60  0000 C CNN
-F 2 "SFUSat:SS-3GLPD-R" H 1825 2950 60  0001 C CNN
-F 3 "" H 1825 2950 60  0001 C CNN
-	1    1825 2950
+P 1825 2075
+F 0 "SW1" H 1825 1925 60  0000 C CNN
+F 1 "LIMIT_SWITCH" H 1825 2325 60  0000 C CNN
+F 2 "SFUSat:SS-3GLPD-R" H 1825 2075 60  0001 C CNN
+F 3 "" H 1825 2075 60  0001 C CNN
+	1    1825 2075
 	1    0    0    -1  
 $EndComp
 Text Notes 7875 2375 0    60   ~ 0
@@ -163,13 +108,13 @@ High Frequency
 $Comp
 L Conn_01x01 J6
 U 1 1 5AA5E577
-P 1925 4800
-F 0 "J6" H 1925 4900 50  0000 C CNN
-F 1 "Conn_01x01" H 1925 4700 50  0000 C CNN
-F 2 "SFUSat:PTH-2.0mm" H 1925 4800 50  0001 C CNN
-F 3 "" H 1925 4800 50  0001 C CNN
-	1    1925 4800
-	0    1    1    0   
+P 975 4375
+F 0 "J6" H 975 4475 50  0000 C CNN
+F 1 "Conn_01x01" H 975 4275 50  0000 C CNN
+F 2 "SFUSat:PTH-2.0mm" H 975 4375 50  0001 C CNN
+F 3 "" H 975 4375 50  0001 C CNN
+	1    975  4375
+	1    0    0    -1  
 $EndComp
 Text Notes 1100 4150 0    60   ~ 0
 +X
@@ -177,84 +122,26 @@ Text Notes 7375 2600 0    60   ~ 0
 +X
 Text Notes 7400 2800 0    60   ~ 0
 -X
-Text Notes 2650 4375 0    60   ~ 0
-Heating Element Power
-Text Notes 2650 4550 0    60   ~ 0
-Ground
-$Comp
-L B3B-XH-A(LF)(SN) J9
-U 1 1 5AAB74F1
-P 3400 3125
-F 0 "J9" H 3400 3300 50  0000 C BNN
-F 1 "B3B-XH-A(LF)(SN)" V 3500 3125 50  0000 C TNN
-F 2 "SFUSat:B3B-XH-A" H 3400 3125 50  0001 C CNN
-F 3 "" H 3400 3125 50  0001 C CNN
-F 4 "-" H 3400 3125 50  0001 C CNN "Applications"
-F 5 "Connectors, Interconnects - Rectangular Connectors - Headers, Male Pins" H 3400 3125 50  0001 C CNN "Categories"
-F 6 "Header" H 3400 3125 50  0001 C CNN "Connector Type"
-F 7 "Tin" H 3400 3125 50  0001 C CNN "Contact Finish - Mating"
-F 8 "Tin" H 3400 3125 50  0001 C CNN "Contact Finish - Post"
-F 9 "-" H 3400 3125 50  0001 C CNN "Contact Finish Thickness - Mating"
-F 10 "-" H 3400 3125 50  0001 C CNN "Contact Finish Thickness - Post"
-F 11 "-" H 3400 3125 50  0001 C CNN "Contact Length - Mating"
-F 12 "0.134\" (3.40mm)" H 3400 3125 50  0001 C CNN "Contact Length - Post"
-F 13 "Brass" H 3400 3125 50  0001 C CNN "Contact Material"
-F 14 "Square" H 3400 3125 50  0001 C CNN "Contact Shape"
-F 15 "Male Pin" H 3400 3125 50  0001 C CNN "Contact Type"
-F 16 "3A" H 3400 3125 50  0001 C CNN "Current Rating"
-F 17 "Detent Lock" H 3400 3125 50  0001 C CNN "Fastening Type"
-F 18 "-" H 3400 3125 50  0001 C CNN "Features"
-F 19 "-" H 3400 3125 50  0001 C CNN "Ingress Protection"
-F 20 "Natural" H 3400 3125 50  0001 C CNN "Insulation Color"
-F 21 "0.276\" (7.00mm)" H 3400 3125 50  0001 C CNN "Insulation Height"
-F 22 "Polyamide (PA66), Nylon 6/6" H 3400 3125 50  0001 C CNN "Insulation Material"
-F 23 "Lead free / RoHS Compliant" H 3400 3125 50  0001 C CNN "Lead Free Status / RoHS Status"
-F 24 "JST Sales America Inc." H 3400 3125 50  0001 C CNN "Manufacturer 1"
-F 25 "B3B-XH-A(LF)(SN)" H 3400 3125 50  0001 C CNN "Manufacturer Part Number 1"
-F 26 "14 Weeks" H 3400 3125 50  0001 C CNN "Manufacturer Standard Lead Time 1"
-F 27 "9.8mm" H 3400 3125 50  0001 C CNN "Mated Stacking Heights"
-F 28 "UL94 V-0" H 3400 3125 50  0001 C CNN "Material Flammability Rating"
-F 29 "Through Hole" H 3400 3125 50  0001 C CNN "Mounting Type"
-F 30 "3" H 3400 3125 50  0001 C CNN "Number of Positions"
-F 31 "All" H 3400 3125 50  0001 C CNN "Number of Positions Loaded"
-F 32 "1" H 3400 3125 50  0001 C CNN "Number of Rows"
-F 33 "-25°C ~ 85°C" H 3400 3125 50  0001 C CNN "Operating Temperature"
-F 34 "-" H 3400 3125 50  0001 C CNN "Overall Contact Length"
-F 35 "Active" H 3400 3125 50  0001 C CNN "Part Status"
-F 36 "0.098\" (2.50mm)" H 3400 3125 50  0001 C CNN "Pitch - Mating"
-F 37 "-" H 3400 3125 50  0001 C CNN "Row Spacing - Mating"
-F 38 "XH" H 3400 3125 50  0001 C CNN "Series"
-F 39 "Shrouded - 4 Wall" H 3400 3125 50  0001 C CNN "Shrouding"
-F 40 "Board to Cable/Wire" H 3400 3125 50  0001 C CNN "Style"
-F 41 "Digi-Key" H 3400 3125 50  0001 C CNN "Supplier 1"
-F 42 "455-2248-ND" H 3400 3125 50  0001 C CNN "Supplier Part Number 1"
-F 43 "Press-Fit, Solder" H 3400 3125 50  0001 C CNN "Termination"
-F 44 "250V" H 3400 3125 50  0001 C CNN "Voltage Rating"
-F 45 "XHP-3" H 3400 3125 50  0001 C CNN "Mating Part Number"
-F 46 "455-2219-ND" H 3400 3125 50  0001 C CNN "Mating Part Digikey"
-	1    3400 3125
-	1    0    0    -1  
-$EndComp
 $Comp
 L Conn_01x01 J7
 U 1 1 5AAB74F7
-P 2200 4800
-F 0 "J7" H 2200 4900 50  0000 C CNN
-F 1 "Conn_01x01" H 2200 4700 50  0000 C CNN
-F 2 "SFUSat:PTH-2.0mm" H 2200 4800 50  0001 C CNN
-F 3 "" H 2200 4800 50  0001 C CNN
-	1    2200 4800
-	0    1    1    0   
+P 975 4100
+F 0 "J7" H 975 4200 50  0000 C CNN
+F 1 "Conn_01x01" H 975 4000 50  0000 C CNN
+F 2 "SFUSat:PTH-2.0mm" H 975 4100 50  0001 C CNN
+F 3 "" H 975 4100 50  0001 C CNN
+	1    975  4100
+	1    0    0    -1  
 $EndComp
 $Comp
 L LIMIT_SWITCH SW2
 U 1 1 5AAB74FD
-P 1825 3450
-F 0 "SW2" H 1825 3300 60  0000 C CNN
-F 1 "LIMIT_SWITCH" H 1825 3700 60  0000 C CNN
-F 2 "SFUSat:SS-3GLPD-R" H 1825 3450 60  0001 C CNN
-F 3 "" H 1825 3450 60  0001 C CNN
-	1    1825 3450
+P 1825 2575
+F 0 "SW2" H 1825 2425 60  0000 C CNN
+F 1 "LIMIT_SWITCH" H 1825 2825 60  0000 C CNN
+F 2 "SFUSat:SS-3GLPD-R" H 1825 2575 60  0001 C CNN
+F 3 "" H 1825 2575 60  0001 C CNN
+	1    1825 2575
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -270,12 +157,6 @@ F 3 "" H 1575 4400 50  0001 C CNN
 $EndComp
 Text Notes 1125 4475 0    60   ~ 0
 -X
-Text Notes 6475 5425 0    60   ~ 0
-Deployemnt Confirmation - Pullup on OBC
-Text Notes 6475 5300 0    60   ~ 0
-Heating Element Power
-Text Notes 6475 5525 0    60   ~ 0
-Ground
 $Comp
 L PC104PTH J10
 U 1 1 5AAB79C2
@@ -325,106 +206,26 @@ $EndComp
 NoConn ~ 8300 3575
 NoConn ~ 8300 4025
 $Comp
-L NC7SZ157 U1
-U 1 1 5AC00BEF
-P 2675 3175
-F 0 "U1" H 2575 2925 60  0000 C CNN
-F 1 "NC7SZ157" H 2525 3525 60  0000 C CNN
-F 2 "SFUSat:SOT-363" H 2675 3175 60  0001 C CNN
-F 3 "" H 2675 3175 60  0001 C CNN
-	1    2675 3175
-	1    0    0    -1  
-$EndComp
-$Comp
 L GND #PWR01
 U 1 1 5AC035A3
-P 1850 4500
-F 0 "#PWR01" H 1850 4250 50  0001 C CNN
-F 1 "GND" H 1850 4350 50  0000 C CNN
-F 2 "" H 1850 4500 50  0001 C CNN
-F 3 "" H 1850 4500 50  0001 C CNN
-	1    1850 4500
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	8025 2600 8175 2600
-Wire Wire Line
-	8175 2750 8025 2750
-Wire Wire Line
-	1850 4500 2325 4500
-Wire Wire Line
-	2200 4500 2200 4600
-Wire Wire Line
-	1925 4500 1925 4600
-Connection ~ 2200 4500
-Wire Wire Line
-	1775 4400 2325 4400
-Wire Wire Line
-	1775 4100 2025 4100
-Wire Wire Line
-	2025 4100 2025 4300
-Wire Wire Line
-	2025 4300 2325 4300
-Wire Wire Line
-	1525 2950 1450 2950
-Wire Wire Line
-	1450 2575 1450 3450
-Wire Wire Line
-	1450 2575 3125 2575
-Wire Wire Line
-	2875 2575 2875 2625
-Wire Wire Line
-	2375 3075 2200 3075
-Wire Wire Line
-	2200 3075 2200 2900
-Wire Wire Line
-	2200 2900 2075 2900
-Wire Wire Line
-	1450 3450 1525 3450
-Connection ~ 1450 2950
-Wire Wire Line
-	2375 3175 2200 3175
-Wire Wire Line
-	2200 3175 2200 3400
-Wire Wire Line
-	2200 3400 2075 3400
-Wire Wire Line
-	2975 3125 3200 3125
-Wire Wire Line
-	3125 2575 3125 3025
-Wire Wire Line
-	3125 3025 3200 3025
-Connection ~ 2875 2575
-Wire Wire Line
-	2725 3475 3075 3475
-Wire Wire Line
-	3075 3475 3075 3225
-Wire Wire Line
-	3075 3225 3200 3225
-Connection ~ 1925 4500
-$Comp
-L GND #PWR02
-U 1 1 5AC03735
-P 2875 3650
-F 0 "#PWR02" H 2875 3400 50  0001 C CNN
-F 1 "GND" H 2875 3500 50  0000 C CNN
-F 2 "" H 2875 3650 50  0001 C CNN
-F 3 "" H 2875 3650 50  0001 C CNN
-	1    2875 3650
+P 675 4450
+F 0 "#PWR01" H 675 4200 50  0001 C CNN
+F 1 "GND" H 675 4300 50  0000 C CNN
+F 2 "" H 675 4450 50  0001 C CNN
+F 3 "" H 675 4450 50  0001 C CNN
+	1    675  4450
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	2875 3575 2875 3650
 $Comp
 L Conn_01x03 J?
 U 1 1 5AF0184B
-P 5300 4250
-F 0 "J?" H 5300 4450 50  0000 C CNN
-F 1 "Conn_01x03" H 5300 4050 50  0000 C CNN
-F 2 "" H 5300 4250 50  0001 C CNN
-F 3 "" H 5300 4250 50  0001 C CNN
-	1    5300 4250
-	1    0    0    -1  
+P 2325 2950
+F 0 "J?" H 2325 3150 50  0000 C CNN
+F 1 "Conn_01x03" H 2325 2750 50  0000 C CNN
+F 2 "" H 2325 2950 50  0001 C CNN
+F 3 "" H 2325 2950 50  0001 C CNN
+	1    2325 2950
+	0    1    1    0   
 $EndComp
 $Comp
 L Conn_01x03 J?
@@ -437,38 +238,158 @@ F 3 "" H 5300 4800 50  0001 C CNN
 	1    5300 4800
 	1    0    0    -1  
 $EndComp
-Text Notes 5500 4600 0    60   ~ 0
--z DC 
-Text Notes 5500 4050 0    60   ~ 0
-+z DC 
-Text Notes 5950 4600 0    60   ~ 0
-1 Ground\n3 3V3
+Text Notes 5375 4925 0    60   ~ 0
+GND\n\n3V3
 $Comp
 L Conn_01x04 J?
 U 1 1 5AF0235B
-P 5300 3200
-F 0 "J?" H 5300 3400 50  0000 C CNN
-F 1 "Conn_01x04" H 5300 2900 50  0000 C CNN
-F 2 "" H 5300 3200 50  0001 C CNN
-F 3 "" H 5300 3200 50  0001 C CNN
-	1    5300 3200
+P 3050 4400
+F 0 "J?" H 3050 4600 50  0000 C CNN
+F 1 "Conn_01x04" H 3050 4100 50  0000 C CNN
+F 2 "" H 3050 4400 50  0001 C CNN
+F 3 "" H 3050 4400 50  0001 C CNN
+	1    3050 4400
 	1    0    0    -1  
 $EndComp
 $Comp
 L Conn_01x04 J?
 U 1 1 5AF023C8
-P 5300 2550
-F 0 "J?" H 5300 2750 50  0000 C CNN
-F 1 "Conn_01x04" H 5300 2250 50  0000 C CNN
-F 2 "" H 5300 2550 50  0001 C CNN
-F 3 "" H 5300 2550 50  0001 C CNN
-	1    5300 2550
+P 3950 2350
+F 0 "J?" H 3950 2550 50  0000 C CNN
+F 1 "Conn_01x04" H 3950 2050 50  0000 C CNN
+F 2 "" H 3950 2350 50  0001 C CNN
+F 3 "" H 3950 2350 50  0001 C CNN
+	1    3950 2350
 	1    0    0    -1  
 $EndComp
-Text Notes 5450 2350 0    60   ~ 0
-+z Deploy Power
-Text Notes 6350 2950 0    60   ~ 0
-1,2 +z Deploy\n3,4 -z Deploy
-Text Notes 5450 3000 0    60   ~ 0
--z Deploy Power
+Text Notes 3125 4625 0    60   ~ 0
+DEPLOY.+Z\nDEPLOY.+Z\nDEPLOY.-Z\nDEPLOY.-Z
+Text Notes 4025 2475 0    60   ~ 0
+RF.DEPLOY0\nRF.DEPLOY1
+Text Notes 2335 3025 3    60   ~ 0
+RF.DEPLOY2
+$Comp
+L CONN_01X03 P?
+U 1 1 5AF89B59
+P 2575 4100
+F 0 "P?" H 2575 4300 50  0000 C BNN
+F 1 "CONN_01X03" V 2675 4100 50  0000 C CNN
+F 2 "" H 2575 4100 50  0000 C CNN
+F 3 "" H 2575 4100 50  0000 C CNN
+	1    2575 4100
+	0    -1   -1   0   
+$EndComp
+Text Notes 2250 3950 0    60   ~ 0
+Jumper Select
+Text Label 5025 4900 2    60   ~ 0
+3V3
+Text Label 5025 4700 2    60   ~ 0
+GND
+$Sheet
+S 2375 2100 650  400 
+U 5AF8D2EB
+F0 "MUX" 60
+F1 "MUX.sch" 60
+F2 "VCC" I R 3025 2200 60 
+F3 "OUT" I R 3025 2300 60 
+F4 "IN0" I L 2375 2200 60 
+F5 "IN1" I L 2375 2300 60 
+F6 "SELECT" I L 2375 2400 60 
+$EndSheet
+Text Label 1450 1700 2    60   ~ 0
+3V3
+Text Label 3100 2200 0    60   ~ 0
+3V3
+$Comp
+L CONN_01X03 P?
+U 1 1 5AF90884
+P 3375 2650
+F 0 "P?" H 3375 2850 50  0000 C BNN
+F 1 "CONN_01X03" V 3475 2650 50  0000 C CNN
+F 2 "" H 3375 2650 50  0000 C CNN
+F 3 "" H 3375 2650 50  0000 C CNN
+	1    3375 2650
+	0    1    1    0   
+$EndComp
+Text Notes 3025 2900 0    60   ~ 0
+Jumper Select
+Wire Wire Line
+	8025 2600 8175 2600
+Wire Wire Line
+	8175 2750 8025 2750
+Wire Wire Line
+	675  4100 775  4100
+Wire Wire Line
+	675  4375 775  4375
+Connection ~ 675  4100
+Wire Wire Line
+	1775 4400 2575 4400
+Wire Wire Line
+	1525 2075 1450 2075
+Wire Wire Line
+	1450 1700 1450 2575
+Wire Wire Line
+	2375 2200 2200 2200
+Wire Wire Line
+	2200 2200 2200 2025
+Wire Wire Line
+	2200 2025 2075 2025
+Wire Wire Line
+	1450 2575 1525 2575
+Connection ~ 1450 2075
+Wire Wire Line
+	2375 2300 2200 2300
+Wire Wire Line
+	2200 2300 2200 2525
+Wire Wire Line
+	2200 2525 2075 2525
+Connection ~ 675  4375
+Wire Wire Line
+	1775 4100 2000 4100
+Wire Wire Line
+	2000 4100 2000 4400
+Connection ~ 2000 4400
+Wire Wire Line
+	2850 4300 2675 4300
+Wire Wire Line
+	2850 4400 2775 4400
+Wire Wire Line
+	2775 4400 2775 4300
+Connection ~ 2775 4300
+Wire Wire Line
+	2575 4400 2575 4300
+Wire Wire Line
+	675  4450 675  4100
+Wire Wire Line
+	2475 4300 2475 4600
+Wire Wire Line
+	2475 4600 2850 4600
+Wire Wire Line
+	2850 4500 2475 4500
+Connection ~ 2475 4500
+Wire Wire Line
+	5100 4700 5025 4700
+Wire Wire Line
+	5100 4900 5025 4900
+Wire Wire Line
+	2325 2750 2325 2400
+Wire Wire Line
+	2325 2400 2375 2400
+Wire Wire Line
+	3025 2200 3100 2200
+Wire Wire Line
+	3025 2300 3375 2300
+Wire Wire Line
+	3375 2300 3375 2450
+Wire Wire Line
+	3750 2450 3475 2450
+Wire Wire Line
+	3750 2350 3275 2350
+Wire Wire Line
+	3275 2350 3275 2450
+NoConn ~ 3750 2250
+NoConn ~ 3750 2550
+NoConn ~ 2225 2750
+NoConn ~ 2425 2750
+NoConn ~ 5100 4800
 $EndSCHEMATC
