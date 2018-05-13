@@ -33,7 +33,6 @@ LIBS:SFUSat-cap
 LIBS:SFUSat-ind
 LIBS:SFUSat-power
 LIBS:SFUSat-res
-LIBS:Antenna-Feed-cache
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
@@ -222,7 +221,7 @@ U 1 1 5AF0184B
 P 2325 2950
 F 0 "J?" H 2325 3150 50  0000 C CNN
 F 1 "Conn_01x03" H 2325 2750 50  0000 C CNN
-F 2 "" H 2325 2950 50  0001 C CNN
+F 2 "Socket_Strips:Socket_Strip_Straight_1x03_Pitch2.54mm" H 2325 2950 50  0001 C CNN
 F 3 "" H 2325 2950 50  0001 C CNN
 	1    2325 2950
 	0    1    1    0   
@@ -233,7 +232,7 @@ U 1 1 5AF018B0
 P 5300 4800
 F 0 "J?" H 5300 5000 50  0000 C CNN
 F 1 "Conn_01x03" H 5300 4600 50  0000 C CNN
-F 2 "" H 5300 4800 50  0001 C CNN
+F 2 "Socket_Strips:Socket_Strip_Straight_1x03_Pitch2.54mm" H 5300 4800 50  0001 C CNN
 F 3 "" H 5300 4800 50  0001 C CNN
 	1    5300 4800
 	1    0    0    -1  
@@ -246,7 +245,7 @@ U 1 1 5AF0235B
 P 3050 4400
 F 0 "J?" H 3050 4600 50  0000 C CNN
 F 1 "Conn_01x04" H 3050 4100 50  0000 C CNN
-F 2 "" H 3050 4400 50  0001 C CNN
+F 2 "Socket_Strips:Socket_Strip_Straight_1x04_Pitch2.54mm" H 3050 4400 50  0001 C CNN
 F 3 "" H 3050 4400 50  0001 C CNN
 	1    3050 4400
 	1    0    0    -1  
@@ -257,7 +256,7 @@ U 1 1 5AF023C8
 P 3950 2350
 F 0 "J?" H 3950 2550 50  0000 C CNN
 F 1 "Conn_01x04" H 3950 2050 50  0000 C CNN
-F 2 "" H 3950 2350 50  0001 C CNN
+F 2 "Socket_Strips:Socket_Strip_Straight_1x04_Pitch2.54mm" H 3950 2350 50  0001 C CNN
 F 3 "" H 3950 2350 50  0001 C CNN
 	1    3950 2350
 	1    0    0    -1  
