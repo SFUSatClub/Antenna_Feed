@@ -33,6 +33,7 @@ LIBS:SFUSat-cap
 LIBS:SFUSat-ind
 LIBS:SFUSat-power
 LIBS:SFUSat-res
+LIBS:Antenna-Feed-cache
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
@@ -204,86 +205,8 @@ F 3 "" H 8600 4025 60  0001 C CNN
 $EndComp
 NoConn ~ 8300 3575
 NoConn ~ 8300 4025
-$Comp
-L GND #PWR01
-U 1 1 5AC035A3
-P 1875 4100
-F 0 "#PWR01" H 1875 3850 50  0001 C CNN
-F 1 "GND" H 1875 3950 50  0000 C CNN
-F 2 "" H 1875 4100 50  0001 C CNN
-F 3 "" H 1875 4100 50  0001 C CNN
-	1    1875 4100
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Conn_01x03 J?
-U 1 1 5AF0184B
-P 2325 2950
-F 0 "J?" H 2325 3150 50  0000 C CNN
-F 1 "Conn_01x03" H 2325 2750 50  0000 C CNN
-F 2 "Socket_Strips:Socket_Strip_Straight_1x03_Pitch2.54mm" H 2325 2950 50  0001 C CNN
-F 3 "" H 2325 2950 50  0001 C CNN
-	1    2325 2950
-	0    1    1    0   
-$EndComp
-$Comp
-L Conn_01x03 J?
-U 1 1 5AF018B0
-P 5300 4800
-F 0 "J?" H 5300 5000 50  0000 C CNN
-F 1 "Conn_01x03" H 5300 4600 50  0000 C CNN
-F 2 "Socket_Strips:Socket_Strip_Straight_1x03_Pitch2.54mm" H 5300 4800 50  0001 C CNN
-F 3 "" H 5300 4800 50  0001 C CNN
-	1    5300 4800
-	1    0    0    -1  
-$EndComp
-Text Notes 5375 4925 0    60   ~ 0
-GND\n\n3V3
-$Comp
-L Conn_01x04 J?
-U 1 1 5AF0235B
-P 3050 4400
-F 0 "J?" H 3050 4600 50  0000 C CNN
-F 1 "Conn_01x04" H 3050 4100 50  0000 C CNN
-F 2 "Socket_Strips:Socket_Strip_Straight_1x04_Pitch2.54mm" H 3050 4400 50  0001 C CNN
-F 3 "" H 3050 4400 50  0001 C CNN
-	1    3050 4400
-	1    0    0    -1  
-$EndComp
-$Comp
-L Conn_01x04 J?
-U 1 1 5AF023C8
-P 3950 2350
-F 0 "J?" H 3950 2550 50  0000 C CNN
-F 1 "Conn_01x04" H 3950 2050 50  0000 C CNN
-F 2 "Socket_Strips:Socket_Strip_Straight_1x04_Pitch2.54mm" H 3950 2350 50  0001 C CNN
-F 3 "" H 3950 2350 50  0001 C CNN
-	1    3950 2350
-	1    0    0    -1  
-$EndComp
-Text Notes 3125 4625 0    60   ~ 0
-DEPLOY.+Z\nDEPLOY.+Z\nDEPLOY.-Z\nDEPLOY.-Z
-Text Notes 4025 2475 0    60   ~ 0
-RF.DEPLOY0\nRF.DEPLOY1
-Text Notes 2335 3025 3    60   ~ 0
-RF.DEPLOY2
-$Comp
-L CONN_01X03 P?
-U 1 1 5AF89B59
-P 2575 4100
-F 0 "P?" H 2575 4300 50  0000 C BNN
-F 1 "CONN_01X03" V 2675 4100 50  0000 C CNN
-F 2 "" H 2575 4100 50  0000 C CNN
-F 3 "" H 2575 4100 50  0000 C CNN
-	1    2575 4100
-	0    -1   -1   0   
-$EndComp
-Text Notes 2250 3950 0    60   ~ 0
+Text Notes 2900 4400 0    60   ~ 0
 Jumper Select
-Text Label 5025 4900 2    60   ~ 0
-3V3
-Text Label 5025 4700 2    60   ~ 0
-GND
 $Sheet
 S 2375 2100 650  400 
 U 5AF8D2EB
@@ -299,18 +222,7 @@ Text Label 1450 1700 2    60   ~ 0
 3V3
 Text Label 3100 2200 0    60   ~ 0
 3V3
-$Comp
-L CONN_01X03 P?
-U 1 1 5AF90884
-P 3375 2650
-F 0 "P?" H 3375 2850 50  0000 C BNN
-F 1 "CONN_01X03" V 3475 2650 50  0000 C CNN
-F 2 "" H 3375 2650 50  0000 C CNN
-F 3 "" H 3375 2650 50  0000 C CNN
-	1    3375 2650
-	0    1    1    0   
-$EndComp
-Text Notes 3025 2900 0    60   ~ 0
+Text Notes 4325 2325 0    60   ~ 0
 Jumper Select
 Wire Wire Line
 	8025 2600 8175 2600
@@ -321,9 +233,7 @@ Wire Wire Line
 Wire Wire Line
 	1525 2075 1450 2075
 Wire Wire Line
-	1450 1700 1450 2075
-Wire Wire Line
-	1450 2075 1450 2575
+	1450 1700 1450 2575
 Wire Wire Line
 	2375 2200 2200 2200
 Wire Wire Line
@@ -342,54 +252,114 @@ Wire Wire Line
 Wire Wire Line
 	1775 4100 1875 4100
 Wire Wire Line
-	2850 4300 2775 4300
-Wire Wire Line
-	2775 4300 2675 4300
-Wire Wire Line
-	2850 4400 2775 4400
-Wire Wire Line
-	2775 4400 2775 4300
-Connection ~ 2775 4300
-Wire Wire Line
-	2575 4400 2575 4300
-Wire Wire Line
-	2475 4300 2475 4500
-Wire Wire Line
-	2475 4500 2475 4600
-Wire Wire Line
-	2475 4600 2850 4600
-Wire Wire Line
-	2850 4500 2475 4500
-Connection ~ 2475 4500
-Wire Wire Line
-	5100 4700 5025 4700
-Wire Wire Line
-	5100 4900 5025 4900
-Wire Wire Line
 	2325 2750 2325 2400
 Wire Wire Line
 	2325 2400 2375 2400
 Wire Wire Line
 	3025 2200 3100 2200
 Wire Wire Line
-	3025 2300 3375 2300
-Wire Wire Line
-	3375 2300 3375 2450
-Wire Wire Line
-	3750 2450 3475 2450
-Wire Wire Line
-	3750 2350 3275 2350
-Wire Wire Line
-	3275 2350 3275 2450
-NoConn ~ 3750 2250
-NoConn ~ 3750 2550
-NoConn ~ 2225 2750
-NoConn ~ 2425 2750
-NoConn ~ 5100 4800
+	3025 2300 4050 2300
 Wire Wire Line
 	775  4375 700  4375
 Wire Wire Line
 	700  4375 700  4100
 Wire Wire Line
 	700  4100 775  4100
+$Comp
+L Conn_01x03 J17
+U 1 1 5AFBBD2A
+P 4250 2300
+F 0 "J17" H 4250 2500 50  0000 C CNN
+F 1 "Conn_01x03" H 4250 2100 50  0000 C CNN
+F 2 "Socket_Strips:Socket_Strip_Straight_1x03_Pitch2.54mm" H 4250 2300 50  0001 C CNN
+F 3 "" H 4250 2300 50  0001 C CNN
+	1    4250 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Conn_01x03 J16
+U 1 1 5AFBBDF8
+P 2775 4400
+F 0 "J16" H 2775 4600 50  0000 C CNN
+F 1 "Conn_01x03" H 2775 4200 50  0000 C CNN
+F 2 "Socket_Strips:Socket_Strip_Straight_1x03_Pitch2.54mm" H 2775 4400 50  0001 C CNN
+F 3 "" H 2775 4400 50  0001 C CNN
+	1    2775 4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L PC104-8BIT J2
+U 1 1 5AFC1E0F
+P 5925 3225
+F 0 "J2" H 6175 1575 60  0000 C CNN
+F 1 "PC104-8BIT" H 5875 4975 60  0000 C CNN
+F 2 "SFUSat:PC104-8bit" H 5925 4225 60  0001 C CNN
+F 3 "" H 5925 4225 60  0001 C CNN
+	1    5925 3225
+	1    0    0    -1  
+$EndComp
+Text Label 5325 4725 2    60   ~ 0
+GNDPWR
+Wire Wire Line
+	6475 4625 6525 4625
+Wire Wire Line
+	6525 4725 6475 4725
+Wire Wire Line
+	5375 4725 5325 4725
+Text Label 5300 3925 2    60   ~ 0
+DEPLOY.+Z
+Text Label 5300 4025 2    60   ~ 0
+DEPLOY.+Z
+Text Label 5300 4125 2    60   ~ 0
+DEPLOY.-Z
+Text Label 5300 4225 2    60   ~ 0
+DEPLOY.-Z
+Text Label 6550 2825 0    60   ~ 0
+RF.DEPLOY2
+Text Label 6550 2325 0    60   ~ 0
+RF.DEPLOY1
+Text Label 6550 2225 0    60   ~ 0
+RF.DEPLOY0
+Text Label 6550 1825 0    60   ~ 0
+3V3
+Text Label 6550 1625 0    60   ~ 0
+GND
+Wire Wire Line
+	6475 1625 6550 1625
+Wire Wire Line
+	6475 1825 6550 1825
+Wire Wire Line
+	6475 2225 6550 2225
+Wire Wire Line
+	6550 2325 6475 2325
+Wire Wire Line
+	6475 2825 6550 2825
+Wire Wire Line
+	5300 4225 5375 4225
+Wire Wire Line
+	5375 4125 5300 4125
+Wire Wire Line
+	5300 4025 5375 4025
+Wire Wire Line
+	5375 3925 5300 3925
+Text Label 3950 2200 2    60   ~ 0
+RF.DEPLOY0
+Text Label 3950 2400 2    60   ~ 0
+RF.DEPLOY1
+Wire Wire Line
+	3950 2200 4050 2200
+Wire Wire Line
+	4050 2400 3950 2400
+Text Label 2325 2750 0    60   ~ 0
+RF.DEPLOY2
+Text Label 2575 4300 2    60   ~ 0
+DEPLOY.+Z
+Text Label 2575 4500 2    60   ~ 0
+DEPLOY.-Z
+Text Label 6525 4725 0    60   ~ 0
+GNDPWR
+Text Label 6525 4625 0    60   ~ 0
+GNDPWR
+Text Label 1875 4100 0    60   ~ 0
+GNDPWR
 $EndSCHEMATC
